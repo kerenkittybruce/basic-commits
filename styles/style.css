@@ -1,28 +1,25 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    font-family: monospace;
-    font-weight: 100 ;
+  box-sizing: border-box;
+  font-family: monospace;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to left, #ff80ff, #330033);
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to left, #ff80ff, #330033);
 }
 
-.container{
+.container-cal {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
-.calc{
-  padding: 18px;
+.calcu-latr {
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 75px);
   border: 4px black;
@@ -31,12 +28,11 @@ body{
   background: linear-gradient(to left, #330033, #ff80ff);
 }
 
-input{
+input {
   grid-column: span 4;
   height: 78px;
   width: 297.5px;
-  box-shadow: inset -4px -4px 10px #fff,
-              inset 4px 4px 10px rgba(0,0,0,.40);
+  box-shadow: inset -4px -4px 10px #fff, inset 4px 4px 10px rgba(0, 0, 0, 0.4);
   border-radius: 15.5px;
   border: none;
   text-align: end;
@@ -45,7 +41,7 @@ input{
   font-size: 45px;
 }
 
-button{
+button {
   box-shadow: 2.5px 5px black;
   border-radius: 15.5px;
   border: none;
@@ -54,11 +50,11 @@ button{
   height: 35.5px;
 }
 
-button:hover{
+button:hover {
   color: #cc00cc;
 }
 
-.equal{
+.equal {
   box-shadow: 2.5px 5px black;
   border-radius: 10px;
   border: none;
@@ -67,7 +63,7 @@ button:hover{
   height: 35.5px;
 }
 
-.clearall{
+.clearall {
   box-shadow: 2.5px 5px black;
   border-radius: 10px;
   border: none;
