@@ -5,24 +5,28 @@ let result = document.getElementById("inputext");
 
 // To calculate equations
 let calculate = (number) => {
-  result.value = result.value + number;
+  sum.value = sum.value + number;
+};
+
+let addToSum = (operator) => {
+  sum.value = sum.value + operator;
 };
 
 // To display results of equations
-let Result = () => {
+let evaluateSum = () => {
   try {
-    result.value = eval(result.value);
+    sum.value = eval(sum.value);
   } catch (err) {
-    alert("Enter the valid Input");
+    alert("Oops! 🤭 There seems to be an issue here... 🤔💭 Please enter valid input values.");
   }
 };
 
 //To clear all input values
-function clr() {
-  result.value = " ";
+function clearSum() {
+  sum.value = "0";
 }
 
 //To act as backspace / clear one digit
-function del() {
-  result.value = result.value.slice(0, -1);
+function deleteSum() {
+  sum.value = sum.value.slice(0, -1);
 }
