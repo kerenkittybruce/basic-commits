@@ -1,7 +1,7 @@
 // Javascript for Calculator Task
 
 //To display input values
-let result = document.getElementById("inputext");
+let sum = document.getElementById("inputext");
 
 // To calculate equations
 let calculate = (number) => {
