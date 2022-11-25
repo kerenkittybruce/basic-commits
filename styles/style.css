@@ -1,4 +1,4 @@
-/*--- General styles ---*/
+/* --- General styles --- */
 
 *,
 *::before,
@@ -13,8 +13,8 @@ body {
   background: linear-gradient(to left, #ff80ff, #330033);
 }
 
-/*--- Calculator content ---*/
-/*--- Calculator itself ---*/
+/* --- Calculator content --- */
+/* --- Calculator itself --- */
 
 .container-cal {
   height: 100vh;
@@ -24,7 +24,7 @@ body {
 }
 
 .calcu-latr {
-  padding: 20px;
+  padding: 25px;
   display: grid;
   grid-template-columns: repeat(4, 75px);
   border: 4px black;
@@ -33,14 +33,14 @@ body {
   background: linear-gradient(to left, #330033, #cc00cc);
 }
 
-/*--- Input Block ---*/
+/* --- Input Block --- */
 
 input {
   grid-column: span 4;
-  height: 78px;
-  width: 297.5px;
+  height: 80px;
+  width: 298.98px;
   box-shadow: inset -4px -4px 10px #fff, inset 4px 4px 10px rgba(0, 0, 0, 0.4);
-  border-radius: 15.5px;
+  border-radius: 12px;
   border: none;
   text-align: end;
   margin: 30px 0px 15px 0px;
@@ -48,15 +48,15 @@ input {
   font-size: 45px;
 }
 
-/*--- Buttons, including Clear and Delete ---*/
+/* --- Buttons, including Clear and Delete --- */
 
 button {
   box-shadow: 2.5px 5px black;
-  border-radius: 15.5px;
+  border-radius: 12px;
   border: none;
-  margin: 2px;
+  margin: 5px;
   width: 69px;
-  height: 35.5px;
+  height: 40px;
 }
 
 button:hover {
@@ -65,19 +65,88 @@ button:hover {
 
 .equal {
   box-shadow: 2.5px 5px black;
-  border-radius: 10px;
+  border-radius: 12px;
   border: none;
-  margin: 2px;
+  margin: 5px;
   width: 146px;
-  height: 35.5px;
+  height: 40px;
+  grid-column: span 2;
 }
 
 .clearall {
   box-shadow: 2.5px 5px black;
-  border-radius: 10px;
+  border-radius: 12px;
   border: none;
-  margin: 2px;
+  margin: 5px;
   width: 146px;
-  height: 35.5px;
+  height: 40px;
   grid-column: span 2;
+}
+
+/* --- Media Queries --- */
+
+/* --- Mobile --- */
+
+@media only screen and (max-width: 300px) {
+  /* --- Calculator itself --- */
+
+  .calcu-latr {
+    width: 280px;
+    grid-template-columns: repeat(4, 64.25px);
+  }
+
+  /*--- Input Block ---*/
+
+  input {
+    height: 80px;
+    width: 235.98px;
+  }
+
+  /*--- Buttons, including Clear and Delete ---*/
+
+  button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .equal,
+  .clearall {
+    margin: 5px;
+    width: 105px;
+    height: 40px;
+    grid-column: span 2;
+  }
+}
+
+/* --- Tablet / Large Mobile --- */
+
+@media only screen and (max-width: 720px) {
+  /* --- Calculator itself --- */
+
+  .calcu-latr {
+    width: 350px;
+    grid-template-columns: repeat(4, 75px);
+  }
+
+  /*--- Input Block ---*/
+
+  input {
+    height: 100px;
+    width: 296.98px;
+  }
+
+  /*--- Buttons, including Clear and Delete ---*/
+
+  button {
+    width: 65px;
+    height: 40px;
+  }
+
+  .equal,
+  .clearall {
+    margin: 5px;
+    width: 140px;
+    height: 40px;
+    grid-column: span 2;
+  }
 }
