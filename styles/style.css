@@ -25,7 +25,7 @@ body {
   border: 4px black;
   border-radius: 15.5px;
   box-shadow: 3.5px 7px black;
-  background: linear-gradient(to left, #330033, #ff80ff);
+  background: linear-gradient(to left, #330033, #cc00cc);
 }
 
 input {

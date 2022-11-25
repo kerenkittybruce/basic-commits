@@ -20,25 +20,27 @@
     <div class="container container-fluid">
       <div class="container-cal container-fluid">
         <div class="calcu-latr fs-3 fw-bold">
+          <!--- Input section --->
           <input type="text" id="inputext" placeholder="0" />
-          <button class="clearall" onclick="clr()">AC</button>
-          <button onclick="del()">DEL</button>
-          <button onclick="calculate('/')">/</button>
-          <button onclick="calculate(7)">7</button>
-          <button onclick="calculate(8)">8</button>
-          <button onclick="calculate(9)">9</button>
-          <button onclick="calculate('*')">*</button>
-          <button onclick="calculate(4)">4</button>
-          <button onclick="calculate(5)">5</button>
-          <button onclick="calculate(6)">6</button>
-          <button onclick="calculate('-')">-</button>
+          <!--- Buttons --->
+          <button class="clearall" onclick="clearSum()">AC</button>
+          <button onclick="deleteSum()">DEL</button>
+          <button onclick="addToSum('÷')">÷</button>
           <button onclick="calculate(1)">1</button>
           <button onclick="calculate(2)">2</button>
           <button onclick="calculate(3)">3</button>
-          <button onclick="calculate('+')">+</button>
+          <button onclick="addToSum('*')">*</button>
+          <button onclick="calculate(4)">4</button>
+          <button onclick="calculate(5)">5</button>
+          <button onclick="calculate(6)">6</button>
+          <button onclick="addToSum('-')">-</button>
+          <button onclick="calculate(7)">7</button>
+          <button onclick="calculate(8)">8</button>
+          <button onclick="calculate(9)">9</button>
+          <button onclick="addToSum('+')">+</button>
           <button onclick="calculate('.')">.</button>
           <button onclick="calculate(0)">0</button>
-          <button class="equal" onclick="Result()">=</button>
+          <button class="equal" onclick="evaluateSum()">=</button>
         </div>
       </div>
     </div>

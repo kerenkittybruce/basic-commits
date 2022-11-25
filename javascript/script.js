@@ -3,7 +3,7 @@
 //To display input values
 let sum = document.getElementById("inputext");
 
-// To calculate equations
+// To input equations to calculate
 let calculate = (number) => {
   sum.value = sum.value + number;
 };
@@ -17,7 +17,9 @@ let evaluateSum = () => {
   try {
     sum.value = eval(sum.value);
   } catch (err) {
-    alert("Oops! 🤭 There seems to be an issue here... 🤔💭 Please enter valid input values.");
+    alert(
+      "Oops! 🤭 There seems to be an issue here... 🤔💭 Please enter the valid input values."
+    );
   }
 };
 
