@@ -39,7 +39,7 @@ input {
   grid-column: span 4;
   height: 80px;
   width: 298.98px;
-  box-shadow: inset -4px -4px 10px #fff, inset 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.4);
   border-radius: 12px;
   border: none;
   text-align: end;
@@ -51,7 +51,7 @@ input {
 /* --- Buttons, including Clear and Delete --- */
 
 button {
-  box-shadow: 2.5px 5px black;
+  box-shadow: 2.5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 12px;
   border: none;
   margin: 5px;
@@ -63,18 +63,9 @@ button:hover {
   color: #cc00cc;
 }
 
-.equal {
-  box-shadow: 2.5px 5px black;
-  border-radius: 12px;
-  border: none;
-  margin: 5px;
-  width: 146px;
-  height: 40px;
-  grid-column: span 2;
-}
-
+.equal,
 .clearall {
-  box-shadow: 2.5px 5px black;
+  box-shadow: 2.5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 12px;
   border: none;
   margin: 5px;
@@ -91,62 +82,137 @@ button:hover {
   /* --- Calculator itself --- */
 
   .calcu-latr {
-    width: 280px;
-    grid-template-columns: repeat(4, 64.25px);
+    padding: 2.25px;
+    grid-template-columns: repeat(4, 70px);
   }
 
   /*--- Input Block ---*/
 
   input {
-    height: 80px;
-    width: 235.98px;
+    height: 50%;
+    width: 275px;
   }
 
   /*--- Buttons, including Clear and Delete ---*/
 
   button {
-    width: 40px;
-    height: 40px;
+    width: 54px;
+    height: 35px;
   }
 
   .equal,
   .clearall {
     margin: 5px;
-    width: 105px;
-    height: 40px;
+    width: 123.25px;
+    height: 35px;
     grid-column: span 2;
   }
 }
 
-/* --- Tablet / Large Mobile --- */
-
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 320px) {
   /* --- Calculator itself --- */
 
   .calcu-latr {
-    width: 350px;
-    grid-template-columns: repeat(4, 75px);
+    padding: 2.25px;
+    grid-template-columns: repeat(4, 70px);
   }
 
   /*--- Input Block ---*/
 
   input {
-    height: 100px;
-    width: 296.98px;
+    height: 50%;
+    width: 275px;
   }
 
   /*--- Buttons, including Clear and Delete ---*/
 
   button {
-    width: 65px;
-    height: 40px;
+    width: 54px;
+    height: 35px;
   }
 
   .equal,
   .clearall {
     margin: 5px;
-    width: 140px;
-    height: 40px;
+    width: 123.25px;
+    height: 35px;
     grid-column: span 2;
+  }
+}
+
+/* --- Tablet --- */
+
+@media only screen and (min-width: 720px) {
+  /* --- Calculator itself --- */
+
+  .calcu-latr {
+    width: 360px;
+    grid-template-columns: repeat(4, 89px);
+  }
+
+  /*--- Input Block ---*/
+
+  input {
+    margin-left: 8.5px;
+    height: 100px;
+    width: 333px;
+  }
+
+  /*--- Buttons, including Clear and Delete ---*/
+
+  button {
+    margin-left: 8.5px;
+    width: 65px;
+    height: 42px;
+  }
+
+  .equal,
+  .clearall {
+    margin: 5px;
+    margin-left: 8.5px;
+    width: 155px;
+    height: 42px;
+    grid-column: span 2;
+  }
+}
+
+/* --- Laptop (lg) --- */
+
+@media only screen and (max-width: 1440px) {
+  /* --- Calculator itself --- */
+
+  .calcu-latr {
+    width: 375px;
+    grid-template-columns: repeat(4, 89px);
+  }
+
+  /*--- Input Block ---*/
+
+  input {
+    margin-left: 20px;
+    height: 100px;
+    width: 333px;
+  }
+
+  /*--- Buttons, including Clear and Delete ---*/
+
+  button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 65px;
+    height: 42px;
+  }
+
+  .equal,
+  .clearall {
+    margin: 5px;
+    margin-left: 20px;
+    width: 155px;
+    height: 42px;
+    grid-column: span 2;
+  }
+
+  .equal {
+    margin-bottom: 10px;
   }
 }

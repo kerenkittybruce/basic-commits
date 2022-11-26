@@ -25,7 +25,7 @@ let evaluateSum = () => {
 
 //To clear all input values
 function clearSum() {
-  sum.value = "0";
+  sum.value = " ";
 }
 
 //To act as backspace / clear one digit
