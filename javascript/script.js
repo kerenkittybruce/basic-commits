@@ -3,13 +3,6 @@
 //To display input values
 let sum = document.getElementById("inputext");
 
-//To prevent multiple decimals from being enterred
-let decimalAllowedClick = true;
-
-if (decimalAllowedClick === true) {
-  decimalAllowedClick = false;
-}
-
 // To input equations to calculate
 let calculate = (number) => {
   sum.value = sum.value + number;
@@ -25,7 +18,7 @@ let evaluateSum = () => {
     sum.value = eval(sum.value);
   } catch (err) {
     alert(
-      "Oops! 🤭 There seems to be an issue here... 🤔💭 Please enter the valid input values."
+      " Oops! 🤭\n There seems to be an issue here... 🤔💭\n Please enter the valid input values. "
     );
   }
 };
